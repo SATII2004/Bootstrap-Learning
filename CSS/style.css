@@ -198,5 +198,32 @@ p{
 }
 
 .header_wrapper .nav-item{
-    
+    margin: 0 .625rem;
 }
+.header_wrapper .nav-item .nav-link{
+    font-size: 1.125;
+    font-weight: 400;
+    color: var(--primary-text);
+    display: inline-block;
+    font-family: var(--secondary-font);
+}
+
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link:focus,
+.header_wrapper .nav-item .nav-link.active{
+    color: var(--secondary-text);
+}
+
+.navbar.header-scrolled{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--bg-white);
+    box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+    transition: 0.3s ease-in-out;
+
+}
+
+
